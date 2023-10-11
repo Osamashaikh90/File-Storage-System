@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+body {
+    background-color: #000;
+}
+
+.Work-heading {
+    font-size: 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #fff;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.first-para ,.second-para ,.third-para{
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    max-width: 40em;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.image-1 ,.image-2 ,.image-3{
+    margin-top: 30px;
+}
+
+.image-1 img ,.image-2 img  , .image-3 img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.image-2{
+    max-width: 50%;
+}
+
+
+
+.second-section {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.third-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 5rem;
+}
+
+
