@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: transparent;
+  color: #fff;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  padding: 0px 50px 0px 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  padding: 0.7rem 1.25rem;
+  margin: auto;
+  cursor: pointer;
+}
+
+.item :hover {
+  text-decoration: underline;
+  text-decoration-color: #00ffff;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  z-index: 4;
+}
+
+.connect-btn {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid gray;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-btn:hover {
+  background-color: #00ffff;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-txt {
+  font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+.navbar {
+    padding: 0px 20px 0px 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .logo{
+    font-size: 1.25rem;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #111010;
+    opacity: 0.9;
+    right: 0;
+    top: 75px;
+    transition: all 0.5s ease;
+    width: 40%;
+  }
+
+  .nav-links-mobile.active {
+    right: 0;
+  }
+
+  .item {
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    transition: all 0.5s ease;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 20px;
+  }
+}
