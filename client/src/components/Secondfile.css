@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Roboto+Mono:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.file-container {
+  background: url("./images/herobg-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+}
+
+.file-container h1 {
+  color: #fff;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 2.5rem;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.brief-detail {
+  padding: 25px 30px;
+  background-color: rgba(0, 0, 0, 0.952);
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.brief-head {
+  font-family: "poppins", sans-serif;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  padding :1rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.blank-container {
+  border: none;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template: 20x;
+  grid-gap: 20px;
+  width: 700px;
+  margin: auto;
+  margin-top: 15px;
+  border: 2px solid rgb(54, 251, 231);
+  padding-right: 30px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px 15px 15px 15px;
+}
+
+.blank-container {
+  position: relative;
+}
+
+.blank-container button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 26%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  color: #ebeef4;
+}
+
+.upload-check-section {
+  height: auto;
+  background-color: rgba(2, 1, 2, 0.952);
+  margin-bottom: 5rem;
+  padding-top: 10px;
+
+}
+
+.check-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 39px;
+}
+
+.check-para {
+  color: #ffffffc6;
+  max-width: 40em;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.check-para-note {
+  color: #ffffffc6;
+  padding: 0.5rem;
+  max-width: 35em;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Baloo Thambi 2", cursive;
+  margin-top: 20px;
+  min-height: auto;
+}
+
+.card {
+  width: 250px;
+  height: 330px;
+  background-color: rgb(29, 34, 37);
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 0px 0px 25px #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 75px;
+  height: 70px;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.card .btn {
+  padding: 10px 20px;
+  background-color: rgb(61, 111, 218);
+  border-radius: 25px;
+  margin-top: auto;
+  margin-bottom: 9px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card .btn:hover {
+  background-color: rgb(17, 42, 97);
+}
+
+.card .btn.standard:hover {
+  background-color: rgb(17, 42, 97);
+}
+
+.card .btn.premium:hover {
+  background-color: rgb(17, 42, 97);
+}
+
+.image-container {
+  position: relative;
+}
+
+/* .image-container:hover img {
+  border: 2px solid red;
+  opacity: 0.8;
+} */
+
+.delete-button {
+  display: none;
+  z-index: 2;
+}
+
+.image-container:hover .delete-button {
+  display: block;
+  font-size: 2.1rem;
+  margin: auto;
+}
+
+/* .image-grid {} */
+
+.image-grid .image-container {
+  position: relative;
+}
+
+/* .image-grid .image-container img {} */
+
+.image-grid .image-container button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding-bottom: 3.2rem;
+  cursor: pointer;
+}
