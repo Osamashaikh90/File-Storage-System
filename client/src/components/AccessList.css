@@ -1,0 +1,90 @@
+.accesslist-section {
+  height: 70vh;
+  color: #fff;
+}
+
+.accesslist-h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2rem;
+  font-family: "Nunito";
+  font-weight: 800;
+}
+
+
+.accesslist-form {
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accesslist-input[type="text"] {
+  display: flex;
+  align-items: center;
+  font-size : 1rem;
+  font-family: "Nunito";
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 34%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.accesslist-button[type="submit"] {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.accesslist-button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.accesslist-container {
+  display: flex;
+  max-width: 50%;
+  margin: auto;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed gray;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.address{
+  font-family: "Nunito";
+  font-size: 1.2rem;
+}
+
+.status {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.error-text{
+  font-size: 1.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: center;
+  }
+
+.accesslist-button {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  font-family: "Nunito";
+  cursor: pointer;
+}
+
+.accesslist-button:hover {
+  background-color: #3e8e41;
+}
