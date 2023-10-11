@@ -1,0 +1,32 @@
+.error-head{
+    color: #fff;
+    font-size: 1rem;
+    padding: 2rem 3rem 3rem 2rem;
+    text-align: center;
+    font-family: "poppins";
+}
+
+.error-bg {
+    mix-blend-mode: hard-light;
+    width: 70%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.error-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #root {
+       display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .error-msg{
+       display: none;
+    }
+}
